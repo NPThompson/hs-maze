@@ -2,7 +2,7 @@ hsmaze
 
 A haskell program for solving mazes. I wrote it to better learn Haskell. In terms of efficiency, it's not. It does work, however. A typical way to use it is like so:
 
-***
+```bash
 > ghc maze.hs
 
 > cat maze1
@@ -27,4 +27,4 @@ A haskell program for solving mazes. I wrote it to better learn Haskell. In term
 #o#..............#
 #o################
 
-***
+```
