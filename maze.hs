@@ -30,7 +30,12 @@ minlen [] = []
 minlen ls = foldr1 (\s0 s1 -> if length s0 > length s1 then s1 else s0) ls
 
 {-
-This implementation uses what I like to call, 'the brute force approach'. The idea is simple: at a point, test to see if it is the end point. If not, recursively search every adjacent open space, so long as that space isn't out of bounds and hasn't been visited already. Filter the results of this recursive search for the shortest path which leads to the exit. If it is the end point, or if no more paths can be found, we're done.
+This implementation uses what I like to call, 'the brute force approach'.
+The idea is simple: at a point, test to see if it is the end point.
+If not, recursively search every adjacent open space,
+so long as that space isn't out of bounds and hasn't been visited already.
+Filter the results of this recursive search for the shortest path which leads to the exit.
+If it is the end point, or if no more paths can be found, we're done.
 -}
 solve :: [[Char]] -> [(Int,Int)]
 solve m = let e = end m
